@@ -38,6 +38,7 @@ article {
   text-align: center;
 }
 
+
 .centrar-imagen {
   text-align: center;
 }
@@ -52,6 +53,15 @@ article .fa-edit {
   top:10px;
 }
 
+.img-landing {
+  border-radius: 0;
+    width: 1665.47px;
+    height: 1078.86px;
+    left: -357.23px;
+    top: -9.04px;
+
+}
+
 figure img {
   border-radius: 120px;
   width: 120px;
@@ -59,6 +69,8 @@ figure img {
   object-fit: cover;
   margin-bottom: 10px;
 }
+
+
 
 h1 {
   font-size: 24px;
