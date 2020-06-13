@@ -87,6 +87,11 @@ padding-bottom: 40px;
   padding-bottom: 10px;
 }
 
+.section-clients h2 {
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
 button {
   padding: 6px 15px;
   background-color: transparent;
