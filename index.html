@@ -131,18 +131,23 @@
       <form action="#">
         <h1>Contáctame</h1>
         <br />
+        <ul>
         <input name="name" type="text" placeholder="Nombre" pattern="[a-zA-Z ]{4,30}" required />
         <br />
         <br />
         <input name="lastname" type="text" placeholder="Apellido" pattern="[a-zA-Z ]{4,30}" required />
         <br />
         <br />
+      </ul>
+      <ul>
         <input name="email" type="email" placeholder="Correo" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required />
         <br />
         <br />
         <input name="phone" minlength="8" type="tel" placeholder="Teléfono" pattern="[0-9]{9}" required/>
         <br />
         <br />
+      </ul>
+      <br><br>
         <textarea name="description" cols="30" rows="10" placeholder="Ingresa una descripción"></textarea>
         <br><br>
         <div>
