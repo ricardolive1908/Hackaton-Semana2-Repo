@@ -87,6 +87,19 @@ padding-bottom: 40px;
   padding-bottom: 10px;
 }
 
+.section-portfolio ul {
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+
+}
+
+.section-clients ul {
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+}
+
 .section-clients h2 {
   font-size: 35px;
   padding-bottom: 10px;
