@@ -57,20 +57,22 @@
           }
    
   input:invalid:focus {
-  background-color: red;
   border-color: red;
+  color: red;
+  box-shadow: 0 0 10px red;
   box-shadow: black;
           }
    
   input:valid {
-  background-color: green;
+  border-color: green;
+  box-shadow: 0 0 10px green;
           }
    
   button {
-  background-color: green;
+  background-color: lightblue;
   padding: 10px;
-  color: white;
-  border: 1pxsolidgreen;
+  color: black;
+  border: 1px lightblue;
   cursor: pointer;
   width: 100%;
   max-width: 400px;
@@ -86,22 +88,22 @@
 <form>
 <h1>Formulario</h1>
 <br>
-<input name="name" minlength="4" maxlength="19" type="text" placeholder="Nombre" required>
+<input name="name" type="text" placeholder="Nombre" pattern="[a-zA-Z ]{4,30}" required>
 <br>
 <br>
-<input name="lastname"minlength="5"maxlength="12"type="text"placeholder="Apellido"required>
+<input name="lastname" type="text" placeholder="Apellido" pattern="[a-zA-Z ]{4,30}" required>
 <br>
 <br>
-<input name="age"min="18"max="65"type="number"placeholder="Edad"required>
+<input name="age" min="18" max="80" type="number" placeholder="Edad" required>
 <br>
 <br>
-<input name="sex" minlength="5" maxlength="12" type="text" placeholder="Sexo"required>
+<input name="sex" type="text" placeholder="Sexo (M o F)" pattern="[F|M]|[f|m]{1}" required>
 <br>
 <br>
-<input name="dni" minlength="5" maxlength="12" type="number" placeholder="DNI"required>
+<input name="dni" minlength = "8" type="number" placeholder="DNI" pattern="[a-zA-Z0-9]+" required>
 <br>
 <br>
-<input name="email"type="email"placeholder="Correo"required>
+<input name="email"type="email"placeholder="Correo" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
 <br>
 <br>
 <div>
