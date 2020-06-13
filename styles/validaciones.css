@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
   text-align: center;
@@ -8,14 +10,17 @@ body {
 
 form {
   border: 1pxsolid#cdcdcd;
-  display: inline-block;
   width: 100%;
-  max-width: 400px;
-  padding: 20px;
   background: grey;
-  margin-top: 120px;
   box-shadow: 0 0 10px #1a1919;
 }
+
+.form-contact input 
+{
+  display: flex;
+  margin-right: 0px;
+}
+
 input {
   padding: 10px;
   transition: all.5sease;

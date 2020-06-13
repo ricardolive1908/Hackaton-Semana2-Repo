@@ -117,8 +117,9 @@
           <img src="./images/client-4.png" alt="Cliente 4" />
         </figure>
       </section>
+      <section class="form-contact">
       <form action="#">
-        <h1>Validando con HTML</h1>
+        <h1>Contáctame</h1>
         <br />
         <input name="name" type="text" placeholder="Nombre" pattern="[a-zA-Z ]{4,30}" required />
         <br />
@@ -126,16 +127,10 @@
         <input name="lastname" type="text" placeholder="Apellido" pattern="[a-zA-Z ]{4,30}" required />
         <br />
         <br />
-        <input name="age" min="18" max="80" type="number" placeholder="Edad" required />
-        <br />
-        <br />
-        <input name="sex" type="text" placeholder="Sexo (M o F)" pattern="[F|M]|[f|m]{1}" required />
-        <br />
-        <br />
-        <input name="dni" minlength="8" type="text" placeholder="DNI" pattern="[a-zA-Z0-9]+" required/>
-        <br />
-        <br />
         <input name="email" type="email" placeholder="Correo" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required />
+        <br />
+        <br />
+        <input name="phone" minlength="8" type="tel" placeholder="Phone" pattern="[0-9]{9}" required/>
         <br />
         <br />
         <div>
@@ -145,6 +140,7 @@
           <button type="reset">Limpiar</button>
         </div>
       </form>
+    </section>
     </main>
   </body>
 </html>
