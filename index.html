@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio de Ejemplo</title>
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/validaciones.css">
   </head>
   <body>
     <main>
-      <section>
+      <section class="section-title">
         <h1>Pachaqtec</h1>
         <figure>
           <img src="./images/banner.png" alt="Ricardo Nique" />
         </figure>
         <h2>Hola, mi nombre es Ricardo Nique</h2>
       </section>
-      <section>
+      <section class="section-about-me">
         <h2>Sobre mí</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam
@@ -34,7 +35,7 @@
         </p>
         <a href="#">Ver CV</a>
       </section>
-      <section>
+      <section class="section-skills">
         <h2>Mis Skills</h2>
         <div>
           <div>
@@ -75,7 +76,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="section-portfolio">
         <h2>Portafolio</h2>
         <figure>
           <img src="./images/portfolio-1.png" alt="Portafolio 1" />
@@ -102,7 +103,7 @@
           <img src="./images/portfolio-8.png" alt="Portafolio 8" />
         </figure>
       </section>
-      <section>
+      <section class= "section-clients">
         <h2>Clientes</h2>
         <figure>
           <img src="./images/client-1.png" alt="Cliente 1" />
@@ -130,14 +131,13 @@
         <input name="email" type="email" placeholder="Correo" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required />
         <br />
         <br />
-        <input name="phone" minlength="8" type="tel" placeholder="Phone" pattern="[0-9]{9}" required/>
+        <input name="phone" minlength="8" type="tel" placeholder="Teléfono" pattern="[0-9]{9}" required/>
         <br />
         <br />
+        <textarea name="description" cols="30" rows="10" placeholder="Ingresa una descripción"></textarea>
+        <br><br>
         <div>
           <button>Enviar</button>
-          <br />
-          <br />
-          <button type="reset">Limpiar</button>
         </div>
       </form>
     </section>
