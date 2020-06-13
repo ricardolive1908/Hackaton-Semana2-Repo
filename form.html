@@ -1,118 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<style>
-  * {
-  box-sizing: border-box;
-          }
-  body {
-  text-align: center;
-  font-family: arial;
-          }
-   
-  form {
-  border: 1pxsolid#cdcdcd;
-  display: inline-block;
-  width: 100%;
-  max-width: 400px;
-  padding: 20px;
-  background: grey;
-  margin-top: 120px;
-  box-shadow: 0 0 10px #1a1919;
-          }
-  input {
-  padding: 10px;
-  transition: all.5sease;
-  border: 3pxsolid#cdcdcd;
-  width: 100%;
-  max-width: 400px;
-  
-          }
-   
-  button {
-    padding: 6px 15px;
-    background-color: transparent;
-    border: 1px solid green;
-    color:green;
-    border-radius: 40px;
-  
-  }
-  
-  button:hover{
-      box-shadow: 0 0 10px #dad5d5;
-  }
-  
-  input:focus {
-  outline: none;
-  box-shadow: 0010px#cdcdcd;
-          }
-   
-  input:disabled,
-  input:read-only {
-  background: #cbcbcb;
-          }
-   
-  input:invalid:focus {
-  border-color: red;
-  color: red;
-  box-shadow: 0 0 10px red;
-  box-shadow: black;
-          }
-   
-  input:valid {
-  border-color: green;
-  box-shadow: 0 0 10px green;
-          }
-   
-  button {
-  background-color: lightblue;
-  padding: 10px;
-  color: black;
-  border: 1px lightblue;
-  cursor: pointer;
-  width: 100%;
-  max-width: 400px;
-          }
-   
-  h1 {
-  color: white;
-          }
-  </style>
-</head>
- 
-<body>
-<form>
-<h1>Formulario</h1>
-<br>
-<input name="name" type="text" placeholder="Nombre" pattern="[a-zA-Z ]{4,30}" required>
-<br>
-<br>
-<input name="lastname" type="text" placeholder="Apellido" pattern="[a-zA-Z ]{4,30}" required>
-<br>
-<br>
-<input name="age" min="18" max="80" type="number" placeholder="Edad" required>
-<br>
-<br>
-<input name="sex" type="text" placeholder="Sexo (M o F)" pattern="[F|M]|[f|m]{1}" required>
-<br>
-<br>
-<input name="dni" minlength = "8" type="number" placeholder="DNI" pattern="[a-zA-Z0-9]+" required>
-<br>
-<br>
-<input name="email"type="email"placeholder="Correo" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
-<br>
-<br>
-<div>
-<button>Enviar</button>
-<br>
-<br>
-<button type="reset">Limpiar</button>
-</div>
-</form>
-</body>
- 
-</html> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        text-align: center;
+        font-family: arial;
+      }
+
+      form {
+        border: 1pxsolid#cdcdcd;
+        display: inline-block;
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background: grey;
+        margin-top: 120px;
+        box-shadow: 0 0 10px #1a1919;
+      }
+      input {
+        padding: 10px;
+        transition: all.5sease;
+        border: 3pxsolid#cdcdcd;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      button {
+        padding: 6px 15px;
+        background-color: transparent;
+        border: 1px solid green;
+        color: green;
+        border-radius: 40px;
+      }
+
+      button:hover {
+        box-shadow: 0 0 10px #dad5d5;
+      }
+
+      input:focus {
+        outline: none;
+        box-shadow: 0010px#cdcdcd;
+      }
+
+      input:disabled,
+      input:read-only {
+        background: #cbcbcb;
+      }
+
+      input:invalid:focus {
+        border-color: red;
+        color: red;
+        box-shadow: 0 0 10px red;
+        box-shadow: black;
+      }
+
+      input:valid {
+        border-color: green;
+        box-shadow: 0 0 10px green;
+      }
+
+      button {
+        background-color: lightblue;
+        padding: 10px;
+        color: black;
+        border: 1px lightblue;
+        cursor: pointer;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      h1 {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <h1>Formulario</h1>
+      <br />
+      <input
+        name="name"
+        type="text"
+        placeholder="Nombre"
+        pattern="[a-zA-Z ]{4,30}"
+        required
+      />
+      <br />
+      <br />
+      <input
+        name="lastname"
+        type="text"
+        placeholder="Apellido"
+        pattern="[a-zA-Z ]{4,30}"
+        required
+      />
+      <br />
+      <br />
+      <input
+        name="age"
+        min="18"
+        max="80"
+        type="number"
+        placeholder="Edad"
+        required
+      />
+      <br />
+      <br />
+      <input
+        name="sex"
+        type="text"
+        placeholder="Sexo (M o F)"
+        pattern="[F|M]|[f|m]{1}"
+        required
+      />
+      <br />
+      <br />
+      <input
+        name="dni"
+        minlength="8"
+        type="number"
+        placeholder="DNI"
+        pattern="[a-zA-Z0-9]+"
+        required
+      />
+      <br />
+      <br />
+      <input
+        name="email"
+        type="email"
+        placeholder="Correo"
+        pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+        required
+      />
+      <br />
+      <br />
+      <div>
+        <button>Enviar</button>
+        <br />
+        <br />
+        <button type="reset">Limpiar</button>
+      </div>
+    </form>
+  </body>
+</html>
