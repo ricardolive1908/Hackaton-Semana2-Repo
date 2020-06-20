@@ -9,7 +9,50 @@ body {
   text-align: center;
   font-family: helvetica;
   outline: none;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
+}
+
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  padding-top: 20px;
+}
+
+p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 29px;
+  color: white;
+
+}
+
+button{
+    -webkit-appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark-color(rgb(239, 239, 239), rgb(74, 74, 74));
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
 }
 
 /* Section Title */
@@ -49,8 +92,8 @@ padding-top: 60px;
   background: rgba(114, 153, 254, 0.5);
   border-radius: 10px;
   position: absolute;
-  margin: 290px 0 0 40px;
-  left: 138px;
+  margin: 270px 0 0 40px;
+  left: 246px;
 }
 
 form {
@@ -88,25 +131,43 @@ input {
 
 }
 
-
-
-.section-title h1 {
-  font-size: 40px;
-}
+/* Section About me */
 
 .section-about-me {
-  background-color: lightpink;
-  color: black;
-  text-align: center;
-  padding-top: 40px;
-padding-bottom: 40px;
+  background-color: #7299FE;
 }
 
+.div-about-me{
+  height: 450px;
+}
 .section-about-me h2{
   font-size: 35px;
   padding-bottom: 10px;
+  color: white;
+} 
+
+.div-about-me p{
+  width: 872px;
+  text-align: justify;
+  margin: 0 auto;
 }
 
+.btn-see-cv{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px;
+  color: #fff;
+  padding: 18px 57px;
+  background: #D16FFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 20px;
+  margin: 30px 0 0 -700px;
+  cursor: pointer;
+}
+
+/* Section Skills */
 .section-skills {
   color: black;
   background-color: #9122FF;
@@ -116,10 +177,68 @@ padding-bottom: 40px;
 }
 
 .section-skills h2{
-  font-size: 35px;
-  padding-bottom: 10px;
+  text-align: center;
   color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+  padding-top: 31px;
+  display: block;
+  margin-bottom: 35px;
 }
+
+.all-skills{
+    width: 838px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 5px;
+    margin: 0 auto;
+}
+
+.all-skills p {
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.skills-base .li {
+  width: 403px;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.white-bar{
+  background: #fff;
+  display: block;
+  height: 21px;
+  border: none;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+
+.white-bar span {
+  height: 21px;
+  float: left;
+  border-radius: 32px;
+  background: #2187e7;
+}
+
+.vue, .flexbox, .wordpress {
+  width: 80%;
+}
+
+.html, .css, .javascript {
+  width: 40%;
+}
+
 
 .section-portfolio {
   background-color: yellowgreen;
@@ -152,14 +271,6 @@ padding-bottom: 40px;
   padding-bottom: 10px;
 }
 
-button {
-  padding: 6px 15px;
-  background-color: transparent;
-  border: 1px solid green;
-  color: green;
-  border-radius: 40px;
-}
-
 button:hover {
   box-shadow: 0 0 10px #dad5d5;
 }
@@ -184,16 +295,6 @@ input:invalid:focus {
 input:valid {
   border-color: green;
   box-shadow: 0 0 10px green;
-}
-
-button {
-  background-color: darkslateblue;
-  padding: 10px;
-  color: silver;
-  border: 1px lightblue;
-  cursor: pointer;
-  width: 100%;
-  max-width: 400px;
 }
 
 h1 {
