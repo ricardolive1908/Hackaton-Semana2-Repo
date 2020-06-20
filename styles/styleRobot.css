@@ -1,0 +1,158 @@
+/*********** My robot style *********/
+body
+{
+  background-color: #0480b9;
+  max-width: 1500px;
+  font-family: 'MuseoModerno', cursive;
+}
+
+.title {
+  top: -100px;
+  position: relative;
+  color: rgb(182, 255, 245);
+}
+.robot {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  width: 400px;
+  height: 400px;
+  transform: translateX(-50%) translateY(-50%);
+  margin-top: 200px;
+  margin-left: 100px;
+}
+/* Head Section */
+.head {
+  width: 150px;
+  height: 155px;
+  position: relative;
+  background: rgb(245, 255, 252);
+  border-radius: 20%;
+  animation-name: movehead;
+  animation-duration: .9s;
+  animation-iteration-count: infinite;
+}
+@keyframes movehead {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(18deg);
+  }
+}
+
+
+.antena-pt1{
+  position: relative;
+  width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+  border-bottom: 50px solid rgb(245, 255, 252);
+  top: -51.5px;
+  left: 50px;
+  border-radius: 32px;
+}
+
+.left-eye {
+  position: absolute;
+  width: 29px;
+  height: 35px;
+  background: rgb(8, 204, 188);
+  top: 45px;
+  left: 30px;
+  border-radius: 30px;
+  transform: rotatex(180deg);
+  transition-duration: 1s;
+  transition-property: transform;
+  animation-iteration-count: infinite;
+}
+
+.right-eye {
+  position: absolute;
+  width: 29px;
+  height: 35px;
+  background: rgb(8, 204, 188);
+  top: 45px;
+  right: 30px;
+  border-radius: 30px;
+  transform: rotatex(180deg);
+  transition-duration: 1s;
+  transition-property: transform;
+  animation-iteration-count: infinite;
+}
+
+/* Body */
+
+.body {
+  position: relative;
+  width: 200px;
+  height: 350px;
+  left: -26px;
+  bottom: -8px;
+  border-radius: 20px;
+  background: rgb(245, 255, 252);
+}
+
+.left-hand {
+  position: relative;
+    width: 20px;
+    height: 24px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rgb(216, 210, 210);
+    top: 150.5px;
+    left: -74px;
+    border-radius: 32px;
+    animation-name: movelefthand;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movelefthand {
+  from {
+    transform: translate3d(0%, 0%, 0%);
+  }
+
+  to {
+    transform: translate3d(50%, -100%, 10%);
+  }
+}
+
+.right-hand{
+  position: relative;
+  width: 20px;
+  height: 24px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid rgb(216, 210, 210);
+  top: 76.5px;
+  left: 203px;
+  border-radius: 32px;
+}
+
+/* Legs */
+.left-leg {
+  position: absolute;
+  bottom: -346px;
+  left: 2px;
+  width: 50px;
+  height: 140px;
+  background: rgb(245, 255, 252);
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  border-bottom-style: double;
+}
+
+.right-leg {
+  position: absolute;
+  bottom: -346px;
+  left: 97px;
+  width: 50px;
+  height: 140px;
+  background: rgb(245, 255, 252);
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  border-bottom-style: double;
+}
