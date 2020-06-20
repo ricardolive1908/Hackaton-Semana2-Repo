@@ -285,23 +285,12 @@ padding-bottom: 40px;
 
 /* Section Form Contact */
 
-.form{
-  margin-top: 27px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2em;
-    grid-row-gap: 2em;
-}
 
-.name, .lastname, .mail, .phone, .description {
+.name {
   padding: 20px 10px;
     width: 100%;
     box-sizing: border-box;
     outline: none;
-}
-
-input {
-  text-rendering: auto;
 }
 
 button:hover {
