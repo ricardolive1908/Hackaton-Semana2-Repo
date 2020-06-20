@@ -1,12 +1,56 @@
+/*Globals*/
 * {
   box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
   text-align: center;
   font-family: helvetica;
   outline: none;
+  width: 1440px;
+}
+
+/* Section Title */
+
+.section-title {
+background-image: url(/images/banner.png);
+background-repeat: no-repeat;
+background-position:center;
+background-size: cover;
+}
+
+.content-title {
+height: 535px;
+color:white;
+}
+
+.content-title h1 {
+text-align: center;
+font-size: 64px;
+font-weight: bold;
+font-style: normal;
+text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.705);
+padding-top: 60px;
+}
+
+.content-title p{
+  width: 365px;
+  height: 117px;
+  padding-top: 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  color: #fff;
+  font-size: 36px;
+  line-height: 42px;
+  background: rgba(114, 153, 254, 0.5);
+  border-radius: 10px;
+  position: absolute;
+  margin: 290px 0 0 40px;
+  left: 138px;
 }
 
 form {
@@ -44,13 +88,7 @@ input {
 
 }
 
-.section-title {
-  background-color: teal;
-  color: white;
-  text-align: center;
-  padding-top: 40px;
-padding-bottom: 40px;
-}
+
 
 .section-title h1 {
   font-size: 40px;
