@@ -34,7 +34,6 @@ p{
 
 button{
     -webkit-appearance: button;
-    -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;
@@ -239,12 +238,12 @@ padding-bottom: 40px;
   width: 40%;
 }
 
+/* Section Portfolio */
 
 .section-portfolio {
-  background-color: yellowgreen;
-  color: black;
-  text-align: center;
-  padding-top: 40px;
+background-color: #FFD233;
+text-align: center;
+padding-top: 40px;
 padding-bottom: 40px;
 }
 
@@ -260,6 +259,19 @@ padding-bottom: 40px;
 
 }
 
+.images img {
+  justify-content: space-between;
+  margin: 20px 20px 20px 20px;
+}
+
+/* Section Clients */
+
+.section-clients {
+  background-color: #3F4E62;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
 .section-clients ul {
   display: flex;
   margin-right: 20px;
@@ -269,6 +281,27 @@ padding-bottom: 40px;
 .section-clients h2 {
   font-size: 35px;
   padding-bottom: 10px;
+}
+
+/* Section Form Contact */
+
+.form{
+  margin-top: 27px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+}
+
+.name, .lastname, .mail, .phone, .description {
+  padding: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input {
+  text-rendering: auto;
 }
 
 button:hover {
@@ -295,8 +328,4 @@ input:invalid:focus {
 input:valid {
   border-color: green;
   box-shadow: 0 0 10px green;
-}
-
-h1 {
-  color: white;
 }
