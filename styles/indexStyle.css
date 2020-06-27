@@ -1,14 +1,14 @@
 /*Globals*/
 * {
     box-sizing: border-box;
-    margin: 0;
+    
     padding: 0;
 }
 
 body {
   text-align: center;
   font-family: helvetica;
-  outline: none;
+  outline: none;margin: 0;
 }
 
 main{
@@ -70,6 +70,7 @@ background-size: cover;
 height: 535px;
 color:white;
 position:relative;
+margin-left: 20px;
 }
 
 .content-title h1 {
@@ -344,8 +345,7 @@ input:valid {
 .list-hackaton{
   background-color: cornflowerblue;
   border-radius: 20px;
-  display:flex;
-  flex-wrap: wrap;
+  display: block;
   width: 900px;
   margin: auto;
   justify-content: space-between;
@@ -354,3 +354,5 @@ input:valid {
 .list-hackaton a{
   width:300px;
 }
+
+/* grid */
