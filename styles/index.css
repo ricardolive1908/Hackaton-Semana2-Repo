@@ -129,13 +129,26 @@ input {
   padding-top: 40px;
 }
 
+.section-popular h2{
+  font-style: normal;
+  font-size:20px;
+  opacity: 0.8;
+}
+
 .article-main {
   display:grid;
   grid-template-columns: repeat(2,1fr);
 }
 
+.article-main img{
+  grid-column: 2/3;
+  grid-row:1/3;
+}
 
-
-
+.article-footer{
+  display: flex;
+align-items: center;
+justify-content: space-between;
+}
 
 
