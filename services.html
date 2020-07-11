@@ -7,88 +7,100 @@
   <title>Bootstrap development</title>
 </head>
 <body>
-  <div class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Barra de Navegación</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Desplegable
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Acción</a>
-            <a class="dropdown-item" href="#">Otra acción</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Algo acá</a>
+  <div class="container-md">
+  <!-- Material form register -->
+<div class="card">
+
+  <h5 class="card-header info-color white-text text-center py-4">
+      <strong>Sign up</strong>
+  </h5>
+
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+
+      <!-- Form -->
+      <form class="text-center" style="color: #757575;" action="#!">
+
+          <div class="form-row">
+              <div class="col">
+                  <!-- First name -->
+                  <div class="md-form">
+                      <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                      <label for="materialRegisterFormFirstName">First name</label>
+                  </div>
+              </div>
+              <div class="col">
+                  <!-- Last name -->
+                  <div class="md-form">
+                      <input type="email" id="materialRegisterFormLastName" class="form-control">
+                      <label for="materialRegisterFormLastName">Last name</label>
+                  </div>
+              </div>
           </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Deasctivado</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+
+          <!-- E-mail -->
+          <div class="md-form mt-0">
+              <input type="email" id="materialRegisterFormEmail" class="form-control">
+              <label for="materialRegisterFormEmail">E-mail</label>
+          </div>
+
+          <!-- Password -->
+          <div class="md-form">
+              <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+              <label for="materialRegisterFormPassword">Password</label>
+              <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                  At least 8 characters and 1 digit
+              </small>
+          </div>
+
+          <!-- Phone number -->
+          <div class="md-form">
+              <input type="password" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
+              <label for="materialRegisterFormPhone">Phone number</label>
+              <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                  Optional - for two step authentication
+              </small>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
+              <label class="form-check-label" for="materialRegisterFormNewsletter">Subscribe to our newsletter</label>
+          </div>
+
+          <!-- Sign up button -->
+          <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+
+          <!-- Social register -->
+          <p>or sign up with:</p>
+
+          <a type="button" class="btn-floating btn-fb btn-sm">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          <a type="button" class="btn-floating btn-tw btn-sm">
+              <i class="fab fa-twitter"></i>
+          </a>
+          <a type="button" class="btn-floating btn-li btn-sm">
+              <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a type="button" class="btn-floating btn-git btn-sm">
+              <i class="fab fa-github"></i>
+          </a>
+
+          <hr>
+
+          <!-- Terms of service -->
+          <p>By clicking
+              <em>Sign up</em> you agree to our
+              <a href="" target="_blank">terms of service</a>
+
       </form>
-    </div>
-  </nav>
-  <form>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputPassword4">Clave</label>
-        <input type="password" class="form-control" id="inputPassword4">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputAddress">Dirección</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="Av La Marina 123">
-    </div>
-    <div class="form-group">
-      <label for="inputAddress2">Dirección 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Interior 3203">
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputCity">Ciudad</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="form-group col-md-4">
-        <label for="inputState">Distrito</label>
-        <select id="inputState" class="form-control">
-          <option selected>Elegir...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="form-group col-md-2">
-        <label for="inputZip">Código Postal</label>
-        <input type="text" class="form-control" id="inputZip">
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Seleccióname
-        </label>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Registrarse</button>
-  </form>
+      <!-- Form -->
+
+  </div>
+
+</div>
+<!-- Material form register -->
 </div>
 </body>
 </html>
