@@ -292,7 +292,7 @@ ul a {
   }
 }
 
-.main-post figure image {
+.main-post figure img {
   width: 100%;
 }
 
@@ -368,7 +368,7 @@ ul a {
   margin-bottom: 10px;
 }
 
-.popular-posts article figure image {
+.popular-posts article figure img {
   width: 100%;
 }
 
@@ -429,14 +429,14 @@ ul a {
 }
 
 /*** InLine Posts ***/
-.other-articles {
+.post-inline {
   width: 100%;
   max-width: 980px;
   margin: auto;
   margin-bottom: 56px;
 }
 
-.other-articles article {
+.post-inline article {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -445,19 +445,19 @@ ul a {
 }
 
 @media (max-width: 620px) {
-  .other-articles article {
+  .post-inline article {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-.other-articles article figure {
+.post-inline article figure {
   height: 100%;
   margin-right: 20px;
 }
 
 @media (max-width: 620px) {
-  .other-articles article figure {
+  .post-inline article figure {
     max-width: 620px;
     width: 100%;
     margin-right: 0;
@@ -465,11 +465,11 @@ ul a {
   }
 }
 
-.other-articles article figure image {
+.post-inline article figure img {
   width: 100%;
 }
 
-.other-articles article .text-line {
+.post-inline article .text-line {
   width: 100%;
   max-width: 590px;
   height: auto;
@@ -485,26 +485,26 @@ ul a {
           justify-content: space-between;
 }
 
-.other-articles article .text-line h2 {
+.post-inline article .text-line h2 {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-.other-articles article .text-line p {
+.post-inline article .text-line p {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.04em;
   color: #5c5c5c;
 }
 
-.other-articles article .text-line .align-end {
+.post-inline article .text-line .align-end {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
 
-/*** Footer Widgets  ***/
+/*** Footer Widgets ***/
 .widgets {
   width: 100%;
   max-width: 980px;
@@ -548,6 +548,10 @@ ul a {
   .widgets p {
     margin-bottom: 30px;
   }
+}
+
+.widgets .post-inline article figure img {
+  width: 100%;
 }
 
 .widgets .button {
@@ -636,7 +640,7 @@ footer {
   display: block;
 }
 
-.box-footer .logo image {
+.box-footer .logo img {
   width: 160px;
 }
 

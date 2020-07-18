@@ -1,4 +1,4 @@
-/*** Footer Widgets  ***/
+/*** Footer Widgets ***/
 .widgets{
     width: 100%;
     max-width: 980px;
@@ -32,6 +32,10 @@
             margin-bottom: 30px;
         }
     }
+
+    .post-inline article figure img {
+      width: 100%;
+  }
     .button{
         width: 50%;
         display: grid;
