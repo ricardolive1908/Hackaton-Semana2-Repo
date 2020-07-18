@@ -1,5 +1,5 @@
-/* ARTICULOS DESTACADOS */
-.secondary-items{
+/*** Popular Posts ***/
+.popular-posts{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-template-rows: auto;
@@ -16,7 +16,7 @@
         
         figure{
             margin-bottom: 10px;
-            images{
+            image{
                 width: 100%;
             }
         }

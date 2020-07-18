@@ -16,7 +16,7 @@
         "molecules/_nav.scss",
         "molecules/_banner.scss",
         "molecules/_search-box.scss",
-        "molecules/_post-main.scss",
+        "molecules/_main-post.scss",
         "molecules/_credits.scss",
         "molecules/_post-secondary.scss",
         "molecules/_line-see-all.scss",

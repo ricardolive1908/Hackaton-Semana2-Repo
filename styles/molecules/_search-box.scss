@@ -1,11 +1,11 @@
-/* CAJA DE BUSQUEDA */
+/*** Search Box ***/
 .search-box{
     position: relative;
     margin:56px 0;
     i{
     position: absolute;
     padding: 20px 0 0 30px;
-    color: map-get($colors, grisUno);
+    color: map-get($colors, grayFirst);
     
         @include breakpoints(xs){
             padding: 20px 0 0 20px;
@@ -15,7 +15,7 @@
     width: 100%;
     padding: 19px 10px 19px 72px ;
     font-size: 16px;
-    color: map-get($colors, grisUno);
+    color: map-get($colors, grayFirst);
     background-color: map-get($colors, grayLight);
     border: none;
     outline: none;

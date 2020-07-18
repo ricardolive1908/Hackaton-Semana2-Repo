@@ -1,4 +1,4 @@
-/* CREDITOS VALOR GLOBAL */
+/*** Credits ***/
 .credits{
     display: grid;
     grid-template-columns: 70% 15% 15%;
@@ -16,7 +16,7 @@
     color: map-get($colors , primary);
     opacity: 0.5;
 }
-.credits images{
+.credits image{
     justify-self: center;
     align-self: center;
 }

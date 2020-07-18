@@ -1,5 +1,5 @@
-/* POST PRINCIPAL */
-.post-main{
+/*** Main Post ***/
+.main-post{
     display: flex;
     margin-bottom: 20px;
     .text-main{
@@ -34,7 +34,6 @@
             line-height: 26px;
             letter-spacing: 0.04em;
             color: map-get($colors, grayDark);
-            // margin-bottom: 35px;
         }
     }
     figure{
@@ -47,10 +46,8 @@
         @include breakpoints(sm){
             padding: 0;
         }
-        images{
+        image{
             width: 100%;
-            // max-width: 540px;
-            // min-width: 200px;
         }
     }
     @include breakpoints(sm){

@@ -212,14 +212,14 @@ ul a {
 }
 
 /*** Main Post ***/
-.post-main {
+.main-post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
 }
 
-.post-main .text-main {
+.main-post .text-main {
   width: 100%;
   max-width: 390px;
   min-width: 200px;
@@ -237,13 +237,13 @@ ul a {
 }
 
 @media (max-width: 620px) {
-  .post-main .text-main {
+  .main-post .text-main {
     max-width: 100%;
     padding: 0;
   }
 }
 
-.post-main .text-main h2 {
+.main-post .text-main h2 {
   font-weight: bold;
   font-size: 2.25rem;
   margin-bottom: 17px;
@@ -252,7 +252,7 @@ ul a {
 }
 
 @media (max-width: 928px) {
-  .post-main .text-main h2 {
+  .main-post .text-main h2 {
     font-size: 1.75rem;
     line-height: 38px;
     margin-bottom: 5px;
@@ -261,14 +261,14 @@ ul a {
   }
 }
 
-.post-main .text-main p {
+.main-post .text-main p {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.04em;
   color: #5c5c5c;
 }
 
-.post-main figure {
+.main-post figure {
   width: 100%;
   max-width: 530px;
   min-width: 200px;
@@ -281,17 +281,17 @@ ul a {
 }
 
 @media (max-width: 620px) {
-  .post-main figure {
+  .main-post figure {
     padding: 0;
   }
 }
 
-.post-main figure images {
+.main-post figure images {
   width: 100%;
 }
 
 @media (max-width: 620px) {
-  .post-main {
+  .main-post {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-transition: 0.5s;
@@ -334,7 +334,7 @@ ul a {
 }
 
 /* ARTICULOS DESTACADOS */
-.secondary-items {
+.popular-posts {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
@@ -346,34 +346,34 @@ ul a {
   margin-bottom: 53px;
 }
 
-.secondary-items article {
+.popular-posts article {
   width: 100%;
   max-width: 300px;
 }
 
 @media (max-width: 620px) {
-  .secondary-items article {
+  .popular-posts article {
     max-width: 100%;
     margin-bottom: 40px;
   }
 }
 
-.secondary-items article figure {
+.popular-posts article figure {
   margin-bottom: 10px;
 }
 
-.secondary-items article figure images {
+.popular-posts article figure images {
   width: 100%;
 }
 
-.secondary-items article .text-article h2 {
+.popular-posts article .text-article h2 {
   font-size: 22px;
   line-height: 32px;
   font-weight: bold;
   margin-bottom: 12px;
 }
 
-.secondary-items article .text-article p {
+.popular-posts article .text-article p {
   font-size: 1rem;
   line-height: 26px;
   letter-spacing: 0.04em;
@@ -382,7 +382,7 @@ ul a {
 }
 
 @media (max-width: 620px) {
-  .secondary-items .dsp-none {
+  .popular-posts .dsp-none {
     display: none;
   }
 }
