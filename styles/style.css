@@ -1,3 +1,9 @@
+/*** Global Colors ***/
+/*** Breakpoints ***/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, time, big, cite, code, del, dfn, em, images, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -51,7 +57,6 @@ h2 {
   color: #1F3F68;
 }
 
-
 /*** Title ***/
 .title-section {
   font-weight: bold;
@@ -82,6 +87,7 @@ h2 {
   color: #6b85b2;
 }
 
+/*** Nav ***/
 header {
   width: 100%;
   height: 130px;
@@ -141,7 +147,7 @@ ul a {
   }
 }
 
-/*** Banner Section ***/
+/*** BANNER ***/
 .banner {
   width: 100%;
   min-height: 250px;
@@ -286,7 +292,7 @@ ul a {
   }
 }
 
-.main-post figure images {
+.main-post figure image {
   width: 100%;
 }
 
@@ -303,7 +309,7 @@ ul a {
   }
 }
 
-/* CREDITOS VALOR GLOBAL */
+/*** Credits ***/
 .credits {
   display: -ms-grid;
   display: grid;
@@ -325,7 +331,7 @@ ul a {
   opacity: 0.5;
 }
 
-.credits images {
+.credits image {
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -333,7 +339,7 @@ ul a {
       align-self: center;
 }
 
-/* ARTICULOS DESTACADOS */
+/*** Popular Posts ***/
 .popular-posts {
   display: -ms-grid;
   display: grid;
@@ -362,7 +368,7 @@ ul a {
   margin-bottom: 10px;
 }
 
-.popular-posts article figure images {
+.popular-posts article figure image {
   width: 100%;
 }
 
@@ -387,7 +393,7 @@ ul a {
   }
 }
 
-/* LINEA DE VER MAS ARTICULOS POPULARES */
+/*** See Inline posts ***/
 .line {
   width: 100%;
   max-width: 940px;
@@ -397,7 +403,6 @@ ul a {
 }
 
 .line p {
-  /* margin-bottom: 26px; */
   font-size: 1rem;
   font-weight: bold;
   color: #316099;
@@ -408,7 +413,7 @@ ul a {
   opacity: 0.3;
 }
 
-/* FONDO AZUL */
+/*** Blue background ***/
 .box-background {
   position: relative;
 }
@@ -420,11 +425,10 @@ ul a {
   border-radius: 0px 200px 0px 0px;
   width: 95%;
   height: 100%;
-  /* height: 830px; */
   z-index: -1;
 }
 
-/* ARTICULOS EN LINEA */
+/*** InLine Posts ***/
 .other-articles {
   width: 100%;
   max-width: 980px;
@@ -461,7 +465,7 @@ ul a {
   }
 }
 
-.other-articles article figure images {
+.other-articles article figure image {
   width: 100%;
 }
 
@@ -500,7 +504,7 @@ ul a {
           align-items: flex-end;
 }
 
-/* WIDGETS */
+/*** Footer Widgets  ***/
 .widgets {
   width: 100%;
   max-width: 980px;
@@ -632,7 +636,7 @@ footer {
   display: block;
 }
 
-.box-footer .logo images {
+.box-footer .logo image {
   width: 160px;
 }
 
