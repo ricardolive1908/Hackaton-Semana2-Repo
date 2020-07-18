@@ -1,0 +1,18 @@
+/* BOTON HACIA ARRIBA */
+.up{
+    position: fixed;
+    right: 2%;
+    bottom: 4%;
+    a{
+    background-color: map-get($colors, black);
+    padding: 15px 16px;
+    border-radius:32px ;
+    i{
+        color: map-get($colors, white);
+        // color: map-get($colors, dark);
+    }
+        &:hover{
+            color: var(--color-terciario);
+        }
+    }
+}

@@ -1,0 +1,44 @@
+/* ARTICULOS DESTACADOS */
+.secondary-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-rows: auto;
+    column-gap: 20px;
+    margin-bottom: 53px;
+    article{
+        width: 100%;
+        max-width: 300px;
+        
+        @include breakpoints(sm){
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+        
+        figure{
+            margin-bottom: 10px;
+            images{
+                width: 100%;
+            }
+        }
+        .text-article{
+            h2{
+                font-size: 22px;
+                line-height: 32px;
+                font-weight: bold;
+                margin-bottom: 12px;
+            }
+            p{
+                font-size: 1rem;
+                line-height: 26px;
+                letter-spacing: 0.04em;
+                margin-bottom: 33px;
+                color: map-get($colors, grayDark);
+            }
+        }
+    }
+    .dsp-none{
+        @include breakpoints(sm){
+            display: none;
+        } 
+    }
+}

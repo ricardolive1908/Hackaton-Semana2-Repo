@@ -1,0 +1,51 @@
+/* ARTICULOS EN LINEA */
+.other-articles{
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+    margin-bottom: 56px;
+    article{
+        width: 100%;
+        display: flex;
+        margin-bottom: 30px;
+
+        @include breakpoints(sm){
+            flex-wrap: wrap;
+        }
+        figure{
+            height: 100%;
+            margin-right: 20px;
+            @include breakpoints(sm){
+                max-width: 620px;
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            images{
+                width: 100%;
+            }
+        }
+        .text-line{
+            width: 100%;
+            max-width: 590px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h2{
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.04em;
+                color: map-get($colors, grayDark);
+            }
+            .align-end{
+                align-items: flex-end;
+            }
+        }
+    }
+}

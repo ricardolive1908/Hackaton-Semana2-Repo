@@ -1,0 +1,120 @@
+footer{
+    background-color: map-get($colors , secondary );
+    border-radius: 0px 200px 0px 0px;
+}
+
+
+.box-footer{
+    width: 100%;
+    max-width: 980px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    color: #fff;
+    .logo{
+        margin-bottom: 20px;
+        display: block;
+        image{
+            width: 160px;
+        }
+    }
+    .footer-widget:nth-child(1){
+        width: 45%;
+        @include breakpoints(sm){
+            width: 60%;
+        }
+        @include breakpoints(xs){
+            width: 100%;
+        }
+    }
+    .footer-widget:nth-child(2){
+        width: 35%;
+        @include breakpoints(sm){
+            width: 40%;
+        }
+        @include breakpoints(xs){
+            width: 100%;
+        }
+    }
+    .footer-widget:nth-child(3){
+        width: 15%;
+        @include breakpoints(sm){
+            width: 100%;
+        }
+        @include breakpoints(xs){
+            width: 100%;
+        }
+    }
+    
+    .footer-widget{
+        .title{
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            color: inherit;
+            margin:10px 0 32px 0;
+        }  
+        .container-icons{
+        display: inline-flex;}
+        .icons{
+            padding-right: 20px;
+            p{
+                font-weight: bold;
+            }
+            p:nth-child(1){
+                padding:5px 0 50px 0;
+            }
+            p:nth-child(2){
+                padding-bottom: 25px;
+            }
+        }
+        .links{
+            li{
+                list-style: none;
+                font-size: 1rem;
+                letter-spacing: 0.05em;
+                margin-bottom: 20px;
+            }
+            a, p{
+                color: inherit;
+            }
+            a:hover{
+                text-decoration: underline;
+                transition: 0.5s;
+            }
+        }
+        .one{
+            p{
+                font-size: 1rem;
+                line-height: 26px;
+                margin-bottom: 20px;
+            }
+            li{
+                margin-bottom: 25px;
+            }
+        } 
+    }
+    @include breakpoints(sm){
+        flex-wrap: wrap;
+    }
+}
+
+footer .copy{
+    max-width: 980px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    margin: auto;
+    p{
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        color: #fff;
+        opacity: 0.5;
+    }
+    @include breakpoints(sm){
+        padding: 50px 20px;
+    }
+    @include breakpoints(xs){
+        padding: 30px 20px;
+    }
+}

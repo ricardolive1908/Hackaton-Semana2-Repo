@@ -1,0 +1,29 @@
+/* BANNER */
+.banner{
+    width: 100%;
+    min-height: 250px;
+    background: linear-gradient(211.87deg, #98D0FC 2.46%, #3481D7 93.24%);
+    padding: 50px 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    .box-banner{
+        width: 100%;
+        max-width: 780px;
+        box-sizing: border-box;
+        padding: 0 25px;
+        margin: auto;
+        h1{
+            display: block;
+            font-size: 2.75rem;
+            color: inherit;
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            color: inherit;
+            margin: auto;
+        }
+    }
+}

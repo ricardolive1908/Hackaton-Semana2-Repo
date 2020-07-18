@@ -192,7 +192,7 @@ figure {
   margin: 0 0 1rem;
 }
 
-img {
+images {
   vertical-align: middle;
   border-style: none;
 }
@@ -470,12 +470,12 @@ mark,
   content: "\2014\00A0";
 }
 
-.img-fluid {
+.images-fluid {
   max-width: 100%;
   height: auto;
 }
 
-.img-thumbnail {
+.images-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -488,7 +488,7 @@ mark,
   display: inline-block;
 }
 
-.figure-img {
+.figure-images {
   margin-bottom: 0.5rem;
   line-height: 1;
 }
@@ -4840,7 +4840,7 @@ input[type="button"].btn-block {
   margin-left: -0.625rem;
 }
 
-.card-img-overlay {
+.card-images-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -4849,22 +4849,22 @@ input[type="button"].btn-block {
   padding: 1.25rem;
 }
 
-.card-img,
-.card-img-top,
-.card-img-bottom {
+.card-images,
+.card-images-top,
+.card-images-bottom {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
 }
 
-.card-img,
-.card-img-top {
+.card-images,
+.card-images-top {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
 
-.card-img,
-.card-img-bottom {
+.card-images,
+.card-images-bottom {
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
@@ -4915,11 +4915,11 @@ input[type="button"].btn-block {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-top,
+  .card-group > .card:not(:last-child) .card-images-top,
   .card-group > .card:not(:last-child) .card-header {
     border-top-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-bottom,
+  .card-group > .card:not(:last-child) .card-images-bottom,
   .card-group > .card:not(:last-child) .card-footer {
     border-bottom-right-radius: 0;
   }
@@ -4927,11 +4927,11 @@ input[type="button"].btn-block {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-top,
+  .card-group > .card:not(:first-child) .card-images-top,
   .card-group > .card:not(:first-child) .card-header {
     border-top-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-bottom,
+  .card-group > .card:not(:first-child) .card-images-bottom,
   .card-group > .card:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
@@ -10222,7 +10222,7 @@ a.text-dark:hover, a.text-dark:focus {
     display: table-header-group;
   }
   tr,
-  img {
+  images {
     page-break-inside: avoid;
   }
   p,
