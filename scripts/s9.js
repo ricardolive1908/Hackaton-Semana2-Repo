@@ -82,3 +82,12 @@ function bonus(){
     alert(`El bono que le corresponde por ${experience} años es de S/.${bonus} soles`);
   }
 }
+
+function teacher_salary(){
+  var year= Number(prompt("Por favor ingrese el año para calcular su salario"));
+  var sueldo=1500;
+  sueldo = 1500 + ((1500*1.1))*year;
+  alert(`Su salario incrementó de S/.1500 a S/.${sueldo} en ${year} años de trabajo`);
+}
+
+
