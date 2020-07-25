@@ -32,8 +32,53 @@ function area_triangle(){
 function area_circunference(){
   var radio = Number(prompt("Ingrese el radio"));
   var area = Math.PI* Math.pow(radio,2);
-  alert(`El area del triángulo es: ${area}`);
+  alert(`El area de la circunferencia es: ${area}`);
 }
 
+function salary(){
+  var horas = Number (prompt("Ingrese cantidad de horas trabajadas"));
+  var sueldo = 0; 
+  var horaHombre= 5;
+  var i = 0;
+  while (i < 6) {
+    var sueldoDiario = horas * horaHombre;
+    sueldo = sueldo + sueldoDiario;
+    i++;
+  };
+  alert(`Su sueldo semanal es: ${sueldo}`);
+}
 
+function telas(){
+  var tela= Number(prompt("Ingrese la cantidad de tela en metros"));
+  var pulgadas = tela/0.0254;
+  alert(`La medida ingresada equivale a ${pulgadas}`);
+}
 
+function exchange(){
+  var dinero = Number(prompt("Ingrese la cantidad de dinero que desea cambiar a dólares"));
+  var Dolares = dinero/3.52;
+  alert(`S/.${dinero} soles es igual a ${Dolares} dólares americanos`);
+}
+
+function yearofbirth(){
+  var year= Number(prompt("Por favor escriba en qué año nació"));
+  var age = 2020-year;
+  if(age>=18 && age<=50)
+  alert(`Su edad es ${age} y está apto para postular al puesto`);
+  else
+  alert(`Su edad es ${age} y no está apto para postular al puesto`);
+}
+
+function bonus(){
+  var experience= Number(prompt("Por favor escriba su tiempo de experiencia"));
+  if(experience>=1 && experience <= 5)
+  {
+    var bonus = experience*100;
+    alert(`El bono que le corresponde por ${experience} años es de S/.${bonus} soles`);
+  }
+  else
+  {
+    bonus=1000;
+    alert(`El bono que le corresponde por ${experience} años es de S/.${bonus} soles`);
+  }
+}
