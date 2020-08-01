@@ -1,0 +1,30 @@
+{
+  "name": "paquete_sesion9",
+  "version": "1.0.0",
+  "description": "Paquete de node js para s9 html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardolive1908/Hackaton-Semana2-Repo.git"
+  },
+  "keywords": [
+    "html",
+    "js",
+    "git",
+    "scss"
+  ],
+  "author": "Juan Ricardo Nique Zambrano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricardolive1908/Hackaton-Semana2-Repo/issues"
+  },
+  "homepage": "https://github.com/ricardolive1908/Hackaton-Semana2-Repo#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.19",
+    "sass": "^1.26.10"
+  }
+}
