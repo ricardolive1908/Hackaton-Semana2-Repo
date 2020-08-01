@@ -1,4 +1,6 @@
 
+
+
 function addition(){
   var n1 = Number(prompt("Ingrese el primer numero"));
   var n2 = Number(prompt ("Ingrese el segundo numero"));
@@ -90,4 +92,38 @@ function teacher_salary(){
   alert(`Su salario incrementó de S/.1500 a S/.${sueldo} en ${year} años de trabajo`);
 }
 
+function minor_age(){
+  var name1 = prompt("Ingrese el nombre de la primera persona");
+  var age1 = Number(prompt("Ingrese la edad de la primera persona"));
+  var name2 = prompt("Ingrese el nombre de la segunda persona");
+  var age2 = Number(prompt("Ingrese la edad de la segunda persona"));
+  var name3 = prompt("Ingrese el nombre de la tercera persona");
+  var age3 = Number(prompt("Ingrese la edad de la tercera persona"));
+  if (age1<age2 && age1<age3)
+  {
+    alert(`${name1} es la persona de menor edad y su edad es ${age1}`);
+  }
+  else if (age2<age1 && age2<age3)
+  {
+    alert(`${name2} es la persona de menor edad y su edad es ${age2}`);
+  }
+  else
+  alert(`${name3} es la persona de menor edad y su edad es ${age3}`)
+}
+
+function n_notes(){
+  var cantidad = Number(prompt("Indique cuantas notas desea evaluar"));
+  var i;
+  var note;
+  for (i = 0; i < cantidad; i++) {
+    note = Number(prompt("Ingrese la nota"));
+    var approve=0;
+    var disapprove=0;
+    if(note<11)
+    {disapprove=disapprove+1;}
+    else if (note>10)
+    {approve=approve+1;}
+}
+  alert(`La cantidad de aprobados es ${approve} y la cantidad de desaprobados es ${disapprove}`);
+}
 
