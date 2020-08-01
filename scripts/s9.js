@@ -127,17 +127,19 @@ function n_notes(){
   alert(`La cantidad de aprobados es ${approve} y la cantidad de desaprobados es ${disapprove}`);
 }
 
-function show_hide(button_id)
+function show_hide()
 {
-  var el = document.getElementById(button_id);
-   if (el.firstChild.data == "Mostrar avance Semana 10") 
+  var el = document.getElementById("btn-w10");
+   if (document.getElementById("btn-w10").value == "Mostrar avance Semana 10") 
    {
-      document.getElementById("w10ex").style.visibility="visible";
-      el.firstChild.data = "Ocultar avance Semana 10";
+      document.getElementById("w10ex").hidden="false";
+      document.getElementById("btn-w10").value == "Ocultar avance Semana 10";
    }
    else 
    {
-     el.firstChild.data = "Ocultar avance Semana 10";
-     document.getElementById("w10ex").style.visibility="hidden";
+    document.getElementById("w10ex").style.visibility="hidden";
+    document.getElementById("btn-w10").value == "Mostrar avance Semana 10";
    }
 }
+
+debbuger();
