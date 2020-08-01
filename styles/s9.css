@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 body 
 {
 background-color: black;
@@ -12,7 +13,9 @@ height: 100vh;
 
 main{
   margin: 0px;
+  margin-top:10%;
   padding:0px;
+  
 }
 .h1-div {
   max-width: 400px;
@@ -143,4 +146,123 @@ h2{
 .section-exercise{
   display: block;
 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 320px) {
+  main{
+  margin: 0px;
+  margin-top:700%;
+  padding:0px;
+}
+h1 {
+  margin-left: -68%;
+}
+.section-exercise
+{
+  margin-left:15%;
+  margin-right: 10%;
+}
+}
+@media only screen and (min-width: 375px) {
+  main{
+  margin: 0px;
+  margin-top:497%;
+  padding:0px;
+}
+h1 {
+  margin-left: -84%;
+}
+.section-exercise
+{
+  margin-left:15%;
+  margin-right: 10%;
+}
+}
+@media only screen and (min-width: 400px) {
+  main{
+    margin: 0px;
+    margin-top:434%;
+    padding:0px;
+  }
+
+  h1 {
+    margin-left: -77%;
+  }
+  .section-exercise
+  {
+    margin-left:16%;
+    margin-right: 10%;
+  }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  main{
+    margin: 0px;
+    margin-top:60%;
+    padding:0px;
+  }
+
+  h1 {
+    margin-left: -84%;
+  }
+  .section-exercise
+  {
+    margin-left:10%;
+    margin-right: 10%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  main{
+    margin: 0px;
+    margin-top:79%;
+    padding:0px;
+  }
+
+  h1 {
+    margin-left: -84%;
+  }
+  .section-exercise
+  {
+    margin-left:10%;
+    margin-right: 10%;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  main{
+    margin: 0px;
+    margin-top:11%;
+    padding:0px;
+  }
+  h1 {
+    margin-left: -103%;
+  }
+  .section-exercise
+  {
+    margin-left:1%;
+    margin-right: 10%;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  main{
+    margin: 0px;
+    margin-top:8%;
+    padding:0px;
+  }
+  h1 {
+    margin-left: -102%;
+  }
+  .section-exercise
+  {
+    margin-left:3%;
+    margin-right: 10%;
+  }
 }
