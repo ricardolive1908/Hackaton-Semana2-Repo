@@ -133,13 +133,9 @@ a span:nth-child(4){
 
 .hw10{
   display: block;
+  margin-left: 39%;
 }
-
-
-.btn-w10{
-margin-left: 39%;
-  }
-
+ 
 h2{
   font-size: 40px;
 }

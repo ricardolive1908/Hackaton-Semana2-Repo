@@ -142,4 +142,3 @@ function show_hide()
    }
 }
 
-debbuger();
