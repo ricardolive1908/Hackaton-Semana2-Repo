@@ -129,16 +129,17 @@ function n_notes(){
 
 function show_hide()
 {
-  var el = document.getElementById("btn-w10");
-   if (document.getElementById("btn-w10").value == "Mostrar avance Semana 10") 
-   {
-      document.getElementById("w10ex").hidden="false";
-      document.getElementById("btn-w10").value == "Ocultar avance Semana 10";
-   }
-   else 
-   {
-    document.getElementById("w10ex").style.visibility="hidden";
-    document.getElementById("btn-w10").value == "Mostrar avance Semana 10";
-   }
+
+  var s=document.getElementById("w10ex");
+  var s2 = document.getElementById('btn-w10');
+  if (s.style.display=="none")
+  {
+    s.style.display="block";
+    s2.innerHTML= s2.innerHTML.replace('↵		↵		↵		↵		↵		Ocultar avance Semana 10↵  ','↵		↵		↵		↵		↵		Ocultar avance Semana 10↵  ');
+  }
+  else{
+    s.style.display="none";
+    s2.innerHTML= s2.innerHTML.replace('↵		↵		↵		↵		↵		Mostrar avance Semana 10↵  ','↵		↵		↵		↵		↵		Ocultar avance Semana 10↵  ');
+  }
 }
 
