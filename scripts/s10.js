@@ -60,40 +60,46 @@ function show_hide(btn)
       document.getElementById("neon").innerHTML="El resultado es : " + ejercicio10({a:1,b:2});
     break;
     case "btn11":
-    ejercicio1(b);
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio11({ name: "John", age: 21, budget: 23000 },
+    { name: "Steve", age: 32, budget: 40000 },
+    { name: "Martin", age: 16, budget: 2700 });
     break;
     case "btn12":
-    ejercicio1(b);
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio12({ name: "Steve" },
+      { name: "Mike" },
+      { name: "John" }
+  );
     break;
     case "btn13":
-    ejercicio1(b);
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio13({likes: 2,dislikes: 3,followers: 10});       
     break;
     case "btn14":
-    ejercicio1(b);
+    var n1 = Number(prompt("Ingrese un número"));
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio14(n1);
     break;
     case "btn15":
-    ejercicio1(b);
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio15(2, 3, 1, 0);
     break;
     case "btn16":
-    ejercicio1(b);
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio16(5);
     break;
     case "btn17":
-    ejercicio1(b);
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio17(1,2,3,4,5);
     break;
     case "btn18":
-    ejercicio1(b);
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio18(1, 2, 3, "x", "y", 10);
     break;
     case "btn19":
-    ejercicio1(b);
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio19(25,4);
     break;
     case "btn20":
-    ejercicio1(b);
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio20('hola cat1 que tal cat2', /cat/g, 'dog');
     break;
     case "btn21":
-    ejercicio1(b);
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio21('I am finding Nemo !');
     break;
     case "btn22":
-    ejercicio1(b);
+    document.getElementById("neon").innerHTML="El resultado es : " + ejercicio22('Computer');
     break;
         default:
           alert(`no se encontró`);
@@ -166,4 +172,72 @@ function ejercicio10(object)
   let arr = []
   arrKeys.forEach((object, index) => arr.push([object, arrValues[index]]))
   return arr
+}
+
+function ejercicio11(...arr) {
+  return arr.map((x) => x.budget).reduce((a, b) => a + b, 0);
+}
+
+function ejercicio12(...arr) {
+  return arr.map(x => x.name)
+}
+
+function ejercicio13(obj) {
+  let arrKeys = Object.keys(obj)
+  let arrValues = Object.values(obj)                    
+  let arr = []
+  arrKeys.forEach((obj, index) => arr.push([obj, arrValues[index]]))
+  return arr
+}
+
+function ejercicio14(number) {
+  let arr = [];
+  for (cont = 1; cont <= number; cont++) {
+      arr.push(cont);
+  }
+  return arr.map(x => x * x).reduce((a, b) => a + b, 0);
+}
+
+function ejercicio15(...arr) {
+  let length = arr.length;
+  return arr.map(x => x * length);
+}
+
+function ejercicio16(number) {
+  let arr = [];
+  for (cont = number; cont >=0; cont--) {
+      arr.push(cont);
+  }
+  return arr ;
+}
+
+function ejercicio17(...numbers) {
+  let min = Math.min.apply(null, numbers);
+  let max = Math.max.apply(null, numbers);
+  return 'the smallest number is: ' + min + ', the biggest number is: '+max+' the difference is: '+(max-min);
+}
+
+function ejercicio18(...values) {
+  return values.filter(x => typeof (x) != 'string')
+}
+
+function ejercicio19(number,times) {
+  let arr = [];
+  for (cont = 1; cont <=times; cont++) {
+      arr.push(number);
+  }
+  return arr ;
+}
+
+function ejercicio20(value, old, new_) {
+  return value.replace(old, new_);
+}
+
+function ejercicio21(value) {
+  return  'I found nemo at: '+value.search('Nemo');
+}
+
+function ejercicio22(value) {
+  let length = value.length;                      
+  return value.substring(0, length - 1) + value.substring(length - 1).toUpperCase();
 }
