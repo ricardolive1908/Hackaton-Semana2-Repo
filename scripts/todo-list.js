@@ -27,12 +27,12 @@ class item{
 
     	var edit = document.createElement('button');
     	edit.classList.add('edit');
-    	edit.innerHTML = "EDIT";
+    	edit.innerHTML = "EDITAR";
     	edit.addEventListener('click', () => this.edit(input, name));
 
     	var remove = document.createElement('button');
     	remove.classList.add('remove');
-    	remove.innerHTML = "REMOVE";
+    	remove.innerHTML = "BORRAR";
     	remove.addEventListener('click', () => this.remove(itemBox, name));
 
     	container.appendChild(itemBox);
@@ -85,4 +85,4 @@ for (var v = 0 ; v < todos.length ; v++){
 }
 
 
-new item("sport");
+new item("tarea por defecto");
