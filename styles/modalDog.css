@@ -245,6 +245,7 @@ img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  box-shadow: gray 5px 5px 5px 5px;
 }
 
 .btn-modal {

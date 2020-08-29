@@ -59,7 +59,7 @@ const form = {
     this.inputName.value = name;
     this.inputAge.value = age;
     this.inputBreed.value = breed;
-    this.inputImage.value = image;
+    this.inputImage.value = 'https://abramsforestvetclinic.com/am-site/media/mask.jpg';
     this.inputDescription.value = description;
 
   },
@@ -68,7 +68,7 @@ const form = {
       name: this.inputName.value,
       age: this.inputAge.value,
       breed: this.inputBreed.value,
-      image: this.inputImage.value,
+      image: 'https://abramsforestvetclinic.com/am-site/media/mask.jpg',
       description: this.inputDescription.value,
     };
   },
@@ -103,7 +103,10 @@ function createCard(values) {
     </div>`;
     console.log('objeto en cache', dogFromLS);
   card.querySelector('.js_card-edit').onclick = () => {
+    for(var i=0; i<jsonPerro.length;i++)
+    {
     showToEdit(card);
+    }
   };
 
   card.querySelector('.js_card-delete').onclick = () => {
