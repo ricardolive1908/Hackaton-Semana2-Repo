@@ -1,10 +1,10 @@
 "use strict";
 
-var input = document.getElementById('input'), // input/output button
-  number = document.querySelectorAll('.numbers div'), // number buttons
-  operator = document.querySelectorAll('.operators div'), // operator buttons
-  result = document.getElementById('result'), // equal button
-  clear = document.getElementById('clear'), // clear button
+var input = document.getElementById('input'), 
+  number = document.querySelectorAll('.numbers div'),
+  operator = document.querySelectorAll('.operators div'),
+  result = document.getElementById('result'), 
+  clear = document.getElementById('clear'), 
   resultDisplayed = false; // flag to keep an eye on what output is displayed
 
 // adding click handlers to number buttons

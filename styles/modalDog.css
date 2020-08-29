@@ -1,0 +1,345 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Globals*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          font-family: 'Russo One', sans-serif;
+          
+}
+
+body {
+  font-family: Helvetica;
+  height: 100vh;
+  background-color: black;
+}
+
+h3 {
+  padding-bottom: 5px;
+}
+
+header {
+  padding: 20px;
+  color: black;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  background-color: greenyellow;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+main {
+  height: 80%;
+}
+
+.close {
+  border-style: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #fff;
+  background-color: #f03434;
+}
+
+.add-pet {
+  border-style: none;
+  font-size: 1.2rem;
+  outline: none;
+  line-height: 21px;
+  cursor: pointer;
+  padding: 20px 30px;
+  background-color: greenyellow;
+  color: black;
+  border-radius: 10px;
+}
+
+.add-pet:hover {
+  background-color: rgb(83, 128, 17);
+  color: white;
+}
+
+/*Diseño Modal y formulario*/
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.modal .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+
+.modal .modal-body {
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.modal textarea {
+  width: 96%;
+  outline: none;
+  border: 1px solid #a2a2a2;
+}
+
+.modal .modal-footer {
+  text-align: center;
+  padding: 20px;
+}
+
+input {
+  width: 45%;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  border: 1px solid #a2a2a2;
+}
+
+.btn-accept {
+  border-style: none;
+  font-size: 1rem;
+  line-height: 16px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: greenyellow;
+  color: black;
+  border-radius: 10px;
+}
+
+.btn-cancel {
+  border-style: none;
+  font-size: 1rem;
+  line-height: 16px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+}
+
+/*Diseño Cards*/
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.headerCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.btn-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+}
+
+article {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 10px;
+  -webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+  width: 240px;
+  height: 317px;
+}
+
+.bodyCard {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.editCard {
+  cursor: pointer;
+  outline: none;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.editCard:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+.cardImage {
+  text-align: center;
+}
+
+.description {
+  padding: 0p 8px 8px 8px;
+  font-size: 14px;
+}
+
+/*Delete Card*/
+.delete-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.askDel-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.delete-card {
+  background-color: #fff;
+  width: 400px;
+  margin: 20px;
+  border-radius: 15px;
+
+}
+
+.delete-card .delete-header {
+  padding: 30px;
+  text-align: center;
+}
+
+.delete-card .delete-body {
+  padding: 50px;
+  text-align: center;
+}
+
+.delete-card .delete-footer {
+  padding: 30px;
+  margin-left: 25%;
+}
+/*# sourceMappingURL=main.css.map */

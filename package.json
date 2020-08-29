@@ -27,5 +27,9 @@
     "lodash": "^4.17.19",
     "sass": "^1.26.10",
     "uglify-js": "^3.10.0"
+  },
+  "devDependencies": {
+    "json": "^10.0.0",
+    "server": "^1.0.30"
   }
 }
