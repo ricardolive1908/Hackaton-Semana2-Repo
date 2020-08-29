@@ -41,7 +41,6 @@ function initFormModal(modalObject, action) {
     event.preventDefault();
 
     action();
-
     form.reset();
     modalObject.close();
   };
@@ -55,12 +54,14 @@ const form = {
   inputDescription: document.querySelector('.js_description'),
 
   setValues(values) {
+    debbuger;
     const { name, age, breed, image, description } = values;
     this.inputName.value = name;
     this.inputAge.value = age;
     this.inputBreed.value = breed;
     this.inputImage.value = image;
     this.inputDescription.value = description;
+
   },
   getValues() {
     return {
@@ -81,23 +82,26 @@ const createCardAndShow = () => {
 
 function createCard(values) {
   const { name, age, breed, image, description } = values;
-
+  var jsonPerro=JSON.stringify(values);
+  localStorage.setItem('perro',jsonPerro);
   const card = document.createElement('article');
+  var dogJSONFromLS= localStorage.getItem('perro');
+  var dogFromLS=JSON.parse(dogJSONFromLS);
   card.innerHTML = `
     <div class="headerCard">
       <button class="js_card-edit editCard">Editar</button>
-      <button class="js_card-delete close">x</button>
+      <button class="js_card-delete close">Eliminar</button>
     </div> 
     <div class="cardImage">
-      <img class="js_card-image" src="${image}"/>
+      <img class="js_card-image" src="${dogFromLS.image}"/>
     </div> 
     <div class="bodyCard">
-      <h3 class="js_card-name">${name}</h3>
-      <h3 class="js_card-breed">${breed}</h3>
-      <h3 class="js_card-age">${age}</h3>
-      <p class="js_card-description description">${description}</p>
+      <h3 class="js_card-name">${dogFromLS.name}</h3>
+      <h3 class="js_card-breed">${dogFromLS.breed}</h3>
+      <h3 class="js_card-age">${dogFromLS.age}</h3>
+      <p class="js_card-description description">${dogFromLS.description}</p>
     </div>`;
-
+    console.log('objeto en cache', dogFromLS);
   card.querySelector('.js_card-edit').onclick = () => {
     showToEdit(card);
   };
@@ -132,12 +136,15 @@ function showToEdit(card) {
   function editCard() {
     const values = form.getValues();
     const { name, age, breed, image, description } = values;
-
-    card.querySelector('.js_card-name').textContent = name;
-    card.querySelector('.js_card-breed').textContent = breed;
-    card.querySelector('.js_card-age').textContent = age;
-    card.querySelector('.js_card-image').src = image;
-    card.querySelector('.js_card-description').textContent = description;
+    var jsonPerro=JSON.stringify(values);
+    localStorage.setItem('perro',jsonPerro);
+    var dogJSONFromLS= localStorage.getItem('perro');
+    var dogFromLS=JSON.parse(dogJSONFromLS);
+    card.querySelector('.js_card-name').textContent = ToString.parse(dogFromLS.name);
+    card.querySelector('.js_card-breed').textContent = ToString.parse(dogFromLS.breed);
+    card.querySelector('.js_card-age').textContent = Number(dogFromLS.age);
+    card.querySelector('.js_card-image').src = dogFromLS.image;
+    card.querySelector('.js_card-description').textContent = dogFromLS.description;
   }
 
   form.setValues({

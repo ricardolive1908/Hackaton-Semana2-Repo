@@ -91,8 +91,6 @@ main {
   border-style: none;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  font-size: 20px;
   font-weight: bold;
   outline: none;
   cursor: pointer;
@@ -151,8 +149,11 @@ main {
 .modal {
   background-color: #fff;
   max-width: 500px;
+  height: 350px;
   width: 100%;
+  margin-top:-12px;
   border-radius: 15px;
+  box-shadow: greenyellow 12px 12px;
 }
 
 .modal .modal-header {
@@ -263,6 +264,9 @@ article {
           box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
   width: 240px;
   height: 317px;
+  background-color: white;
+  box-shadow: greenyellow 12px 12px;
+  border-radius: 15px;
 }
 
 .bodyCard {
