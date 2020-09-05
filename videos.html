@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos with VUE</title>
+</head>
+<body>
+  <script>
+    async function getUsers()
+    {
+      const response=await fetch('http://localhost:3000/posts')
+      .then((response) => response.json())
+      .then(response=>response)
+    }
+    console.log(getUsers());
+  </script>
+</body>
+</html>

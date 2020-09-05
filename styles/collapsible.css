@@ -36,8 +36,6 @@ border-radius: 3px;
 transform: scaleY(0);
   float:left;
   display:block;
-  
-  
 }
 .open .accordionItemContent{
       padding: 20px;
@@ -83,5 +81,5 @@ transition: transform 0.4s ease;
 
 .open .accordionItemHeading:hover{
   background-color: black;
-color: white;
+  color: white;
 }

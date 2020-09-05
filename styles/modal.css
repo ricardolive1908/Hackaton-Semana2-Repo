@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Globals*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          font-family: 'Russo One', sans-serif;
+          
+}
+
+body {
+
+  height: 100vh;
+  background-color: black;
+}
+
+header {
+  padding: 20px;
+  color: black;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  background-color: greenyellow;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+main {
+  height: 80%;
+}
+
+.close {
+  border-style: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #fff;
+  background-color: #f03434;
+}
+
+.open-modal {
+  border-style: none;
+  font-size: 1.2rem;
+  outline: none;
+  line-height: 21px;
+  cursor: pointer;
+  padding: 20px 30px;
+  background-color: greenyellow;
+  color: black;
+  border-radius: 10px;
+}
+
+
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  max-width: 500px;
+  height: 172px;
+  width: 100%;
+  margin-top:-50px;
+  border-radius: 15px;
+  box-shadow: greenyellow 12px 12px;
+}
+
+.modal .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+
+.modal .modal-body {
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.modal .modal-footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.btn-cancel {
+  border-style: none;
+  font-size: 1rem;
+  line-height: 16px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: greenyellow;
+  color: black;
+  border-radius: 10px;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.btn-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+}
+
+.open-modal:hover{
+  background:darkslategrey;
+  -webkit-transform:scale(1.05);
+  color:rgba(255,255,255,0.8);
+  box-shadow:0 0 30px -10px #000
+}
+
+.btn-cancel:hover{
+  background:darkslategrey;
+  -webkit-transform:scale(1.05);
+  color:rgba(255,255,255,0.8);
+  box-shadow:0 0 30px -10px #000
+}
+
+/*# sourceMappingURL=main.css.map */

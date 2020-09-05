@@ -54,7 +54,6 @@ const form = {
   inputDescription: document.querySelector('.js_description'),
 
   setValues(values) {
-    debbuger;
     const { name, age, breed, image, description } = values;
     this.inputName.value = name;
     this.inputAge.value = age;

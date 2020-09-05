@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/modal.css">
+  <script src="scripts/modal.js" defer></script>
+</head>
+<body>
+  <header><h1>Mostrando Modal - Hackaton Semana 12</h1></header>
+  <main>
+    <div class="btn-modal"><button class="open-modal js_btnOpen">Abrir Modal</button></div>
+    <div id="container"></div>
+    <div class="js_modal modal-bg">
+      <div class="modal">
+        <form class="js_form">
+          <div class="modal-header"><h2>Bienvenido!!</h2>
+          <button class="js_modal-close close" type="reset">X</button>
+          </div>
+          <div class="modal-body"> 
+            <h2>Estás dentro del modal!</h2>
+          </div>
+          <div class="modal-footer">
+            <button class="js_modal-cancel btn-cancel" type="reset">Cerrar modal</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
