@@ -1,25 +1,32 @@
-body{    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-  background: linear-gradient(to right, #25c481, #25b7c4);}
-.accordionWrapper{padding:30px;background:#fff;float:left;width:80%;box-sizing:border-box;margin:10%;    box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+body{    background: black;}
+.accordionWrapper{padding:30px;background:greenyellow;float:left;width:80%;box-sizing:border-box;margin:10%;    box-shadow: 13px 12px 10px #6fcc15;}
 .accordionItem{
   float:left;
   display:block;
   width:100%;
   box-sizing: border-box;
-  font-family:'Open-sans',Arial,sans-serif;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 15px;
 }
 .accordionItemHeading{
   cursor:pointer;
   margin:0px 0px 10px 0px;
   padding:10px;
-  background:#2980b9;
-  color:#fff;
+  background:black;
+  color:white;
   width:100%;
   -webkit-border-radius: 3px;
 -moz-border-radius: 3px;
 border-radius: 3px;
       box-sizing: border-box;
 }
+
+.accordionItemHeading:hover{
+  background-color: #bdc3c7;
+    color: #7f8c8d;
+}
+
 .close .accordionItemContent{
   height:0px;
   transition:height 1s ease-out;
@@ -34,8 +41,8 @@ transform: scaleY(0);
 }
 .open .accordionItemContent{
       padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: black;
+  border: 1px solid black;
   width: 100%;
   margin: 0px 0px 10px 0px;
   display:block;
@@ -47,6 +54,7 @@ transform: scaleY(1);
 -o-transform-origin: top;
 -ms-transform-origin: top;
 transform-origin: top;
+color: white;
 
 -webkit-transition: -webkit-transform 0.4s ease-out;
 -o-transition: -o-transform 0.4s ease;
@@ -71,4 +79,9 @@ transition: transform 0.4s ease;
   border-bottom-left-radius: 0px;
   background-color: #bdc3c7;
   color: #7f8c8d;
+}
+
+.open .accordionItemHeading:hover{
+  background-color: black;
+color: white;
 }
