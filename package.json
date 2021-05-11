@@ -24,7 +24,7 @@
   "homepage": "https://github.com/ricardolive1908/Hackaton-Semana2-Repo#readme",
   "dependencies": {
     "jquery": "^3.5.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "sass": "^1.26.10",
     "uglify-js": "^3.10.0"
   },
